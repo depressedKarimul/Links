@@ -17,8 +17,8 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 90%;
-  max-width: 600px; 
-  margin-top: 20px; 
+  max-width: 600px;
+  margin-top: 20px;
 }
 
 .profile-pic {
@@ -29,11 +29,16 @@ body {
   border: 2px solid #0ae2f1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
-  
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .links a {
-  display: block;
+  display: inline-block; 
   background: #32696e;
   padding: 10px;
   margin: 10px 0;
@@ -42,6 +47,9 @@ body {
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
   font-size: 14px;
+  max-width: 700px; 
+  width: 100%; /* Full width of the container */
+  text-align: center; 
 }
 
 .links a:hover {
