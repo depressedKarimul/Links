@@ -1,9 +1,28 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://img.freepik.com/free-photo/apocalyptic-destruction-war-zone-landscape_23-2150985687.jpg?t=st=1745282334~exp=1745285934~hmac=8840798380a5a372af0894947832b7e063efbbcfa1bec5f314b46b7da9470bca&w=1380');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+  transform: scale(1.05); /* this hides edge glow */
+}
+
+
 .kanit-medium {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
+
+      
+   
 
 @keyframes float {
   0%, 100% {
