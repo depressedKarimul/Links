@@ -1,0 +1,30 @@
+
+/* Custom Tooltip Theme */
+.tippy-box[data-theme~='cyberpunk'] {
+    background-color: rgba(5, 5, 5, 0.9);
+    color: #f3f4f6;
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+}
+
+.tippy-box[data-theme~='cyberpunk'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: rgba(239, 68, 68, 0.5);
+}
+.tippy-box[data-theme~='cyberpunk'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: rgba(239, 68, 68, 0.5);
+}
+.tippy-box[data-theme~='cyberpunk'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: rgba(239, 68, 68, 0.5);
+}
+.tippy-box[data-theme~='cyberpunk'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: rgba(239, 68, 68, 0.5);
+}
+
+.tippy-content {
+    padding: 8px 16px;
+    letter-spacing: 1px;
+}

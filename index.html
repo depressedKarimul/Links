@@ -77,7 +77,14 @@
 </head>
 
 <body
-    class="font-sans antialiased text-white leading-normal tracking-wider min-h-screen flex items-center justify-center overflow-x-hidden">
+    class="font-sans antialiased text-white leading-normal tracking-wider min-h-screen flex items-center justify-center overflow-x-hidden relative selection:bg-red-500 selection:text-white">
+
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas" class="fixed top-0 left-0 w-full h-full -z-10"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot hidden lg:block"></div>
+    <div class="cursor-outline hidden lg:block"></div>
 
     <div
         class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 mx-auto px-0 sm:px-6 lg:px-0 py-0 sm:py-12 items-stretch gap-0">
